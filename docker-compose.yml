@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  php:
+    image: httpd
+    ports:
+      - 8080:80
+    volumes:
+      - ./build/bin:/usr/local/apache2/cgi-bin/
+      - ./apache.conf:/usr/local/apache2/conf/httpd.conf
