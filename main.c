@@ -2,5 +2,6 @@
 #include <stdlib.h>
 
 int main(){
-    printf("hallo");
+    printf("Content-type: text/html\n\n");
+    printf("Hello, World.");
 }
