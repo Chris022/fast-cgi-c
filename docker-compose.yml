@@ -6,5 +6,5 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./build/bin:/usr/local/apache2/cgi-bin/
+      - ./build/bin:/usr/local/apache2/htdocs
       - ./apache.conf:/usr/local/apache2/conf/httpd.conf

@@ -20,5 +20,5 @@ project(FastCGI-C)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_executable(fast-gci-c main.c)
+add_executable(cgi-example cgi-example.c)
 
