@@ -32,7 +32,7 @@ int main(){
         }
     }
 
-    printf(method);
-    printf(query);
-    printf(body);
+    printf("Method: %s  <br/>",method);
+    printf("Url Params: %s <br/>",query);
+    printf("Body: %s <br/>",body);
 }
