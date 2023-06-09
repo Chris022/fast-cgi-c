@@ -2,9 +2,9 @@ version: '3.1'
 
 services:
   php:
-    image: httpd
+    image: jitesoft/lighttpd
     ports:
       - 8080:80
     volumes:
-      - ./build/bin:/usr/local/apache2/htdocs
-      - ./apache.conf:/usr/local/apache2/conf/httpd.conf
+      - ./build/bin:/var/www/html
+      - ./lighttpd.conf:/etc/lighttpd/lighttpd.conf 
