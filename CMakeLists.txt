@@ -26,3 +26,7 @@ link_libraries("-static")
 add_executable(cgi-example cgi-example.c)
 
 target_link_libraries(cgi-example PUBLIC "-static") # static
+
+add_executable(fcgi-example fcgi-example.c)
+
+target_link_libraries(fcgi-example PUBLIC -lfcgi "-static") # static
